@@ -1,0 +1,285 @@
+/* Reset de estilos de elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #3b3b3b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav li {
+    margin-left: 1.5rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav a:hover {
+    color: #fcd206;
+}
+
+/* Estilos para la sección "Sobre mí" */
+#sobre-mi {
+    padding: 4rem;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre-mi h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+#sobre-mi p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#sobre-mi ul {
+    list-style: none;
+    text-align: center;
+}
+
+#sobre-mi ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#sobre-mi ul li strong {
+    font-weight: bold;
+}
+
+/* Estilos para la sección "Proyectos" */
+#proyectos {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#proyectos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#proyectos ul {
+    list-style: none;
+}
+
+#proyectos li {
+    margin-bottom: 2rem;
+}
+
+#proyectos h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#proyectos p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#proyectos ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#proyectos ul li strong {
+    font-weight: bold;
+}
+
+#proyectos a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#proyectos a:hover {
+    color: #fcd206;
+}
+
+/* Estilos para la sección "Contacto" */
+#contacto {
+    padding: 4rem;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+#contacto input[type="text"]:focus,
+#contacto input[type="email"]:focus,
+#contacto textarea:focus {
+    outline: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+#contacto textarea {
+    height: 8rem;
+}
+#contacto input[type="submit"] {
+    padding: 1rem 2rem;
+    background-color: #3b3b3b;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#contacto input[type="submit"]:hover {
+    background-color: #fcd206;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #3b3b3b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+/* Animaciones */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slide-up 1s ease-in-out;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+.slide-down {
+    animation: slide-down 1s ease-in-out;
+}
+
+nav ul li a {
+    transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #fcd206;
+    transform: translateY(-3px);
+}
+
+nav ul li a:active,
+nav ul li a:focus {
+    color: #fcd206;
+    transform: translateY(-3px);
+    outline: none;
+}
+
+
+/*centrar iconos*/
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    color: #FCD206;
+  }
+  
