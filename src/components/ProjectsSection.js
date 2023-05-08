@@ -5,7 +5,7 @@ import Cards from "./Card";
 
 const projects = [
   {
-    title: "student prospects",
+    title: "Students Prospects",
     description:
       "Web page designed for aspiring students of the Universidad Del Norte",
     getImageSrc: () => require("../assets/aspirantes.png"),
